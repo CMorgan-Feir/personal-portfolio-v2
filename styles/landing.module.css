@@ -1,0 +1,96 @@
+.main-intro {
+  font-family: 'Lora', serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 3.5vw;
+  letter-spacing: 2px;
+}
+
+.intro-overview-container {
+  width: 60%;
+  text-align: center;
+}
+
+#green-font {
+  color: black;
+  text-decoration: none;
+  background: url("/wave-green.svg");
+  background-position-x: 0%;
+  background-position-y: 0%;
+  background-size: auto auto;
+  background-repeat: repeat-x;
+  background-size: 20px 84px; 
+  background-position: 0px 20px;
+  background-color: transparent;
+  animation: move 15s linear infinite;
+  -webkit-animation: move 15s linear infinite;
+  animation-play-state: paused;
+  text-decoration: none;
+  background-color: transparent;
+  -webkit-text-decoration-skip: objects;
+}
+
+#green-font:hover {
+  color: #628273;
+  animation-play-state: running;
+}
+
+#yellow-font {
+  color: black;
+  text-decoration: none;
+  background: url("/wave-yellow.svg");
+  background-position-x: 0%;
+  background-position-y: 0%;
+  background-size: auto auto;
+  background-repeat: repeat-x;
+  background-size: 20px 84px; 
+  background-position: 0px 20px;
+  background-color: transparent;
+  animation: move 15s linear infinite;
+  -webkit-animation: move 15s linear infinite;
+  animation-play-state: paused;
+  text-decoration: none;
+  background-color: transparent;
+  -webkit-text-decoration-skip: objects;
+}
+
+#yellow-font:hover {
+  color: #B69128;
+  animation-play-state: running;
+}
+
+#pink-font {
+  color: black;
+  text-decoration: none;
+  background: url("/wave-pink.svg");
+  background-position-x: 0%;
+  background-position-y: 0%;
+  background-size: auto auto;
+  background-repeat: repeat-x;
+  background-size: 20px 84px; 
+  background-position: 0px 20px;
+  background-color: transparent;
+  animation: move 15s linear infinite;
+  -webkit-animation: move 15s linear infinite;
+  animation-play-state: paused;
+  text-decoration: none;
+  background-color: transparent;
+  -webkit-text-decoration-skip: objects;
+}
+
+#pink-font:hover {
+  color: #D58389;
+  animation-play-state: running;
+}
+
+@-webkit-keyframes move {
+  0%   { background-position: 2px 19px; }
+  100% { background-position: 500px 19px; }
+}
+
+@keyframes move {
+  0%   { background-position: 2px 19px; }
+  100% { background-position: 500px 19px; }
+}

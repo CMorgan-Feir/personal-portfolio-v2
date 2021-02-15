@@ -1,65 +1,23 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
+import LandingStyles from '../styles/landing.module.css'
+import { NavBar } from '../src/components/navbar'
+import { Pane } from '../src/components/pane'
 
 export default function Home() {
   return (
-    <div className={styles.container}>
-      <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
-
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
-
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
+    <>
+      <NavBar />
+      <Pane>
+        <div className={LandingStyles["main-intro"]}>
+            <div className={LandingStyles["intro-overview-container"]}>
+                <h3>Hello, I’m Caoimhe. I write code. I’ve made{" "}
+                  <a href="/tabula-rasa"><span className={LandingStyles["wavy-underline"]} id={LandingStyles["green-font"]} data-text="ecommerce sites">ecommerce sites</span></a>,{" "}
+                  <a href="/articulate-360"><span className={LandingStyles["wavy-underline"]} id={LandingStyles["yellow-font"]}>VR projects</span></a> and{" "}
+                  <a href="/music-mapper"><span className={LandingStyles["wavy-underline"]} id={LandingStyles["pink-font"]}>web apps</span></a>.</h3>
+            </div>
         </div>
-      </main>
-
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
-        </a>
-      </footer>
-    </div>
+      </Pane>
+    </>
   )
 }

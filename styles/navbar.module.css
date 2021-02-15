@@ -1,0 +1,17 @@
+.nav-container {
+  background-color: #F5EFE1;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #895693;
+}
+
+.logo {
+  overflow: visible;
+  margin-top: 0;
+  width: 170px;
+  /* @include breakpoint-max-sm {
+    width: 130px;
+  } */
+}
