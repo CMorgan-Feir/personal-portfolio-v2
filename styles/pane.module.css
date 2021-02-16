@@ -1,0 +1,6 @@
+.pane-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem 8rem 3rem 8rem;
+}

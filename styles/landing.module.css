@@ -1,11 +1,18 @@
 .main-intro {
-  font-family: 'Lora', serif;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-size: 3.5vw;
-  letter-spacing: 2px;
+}
+
+.nav-centre {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.logo-image {
+  width: 250px;
 }
 
 .intro-overview-container {
@@ -21,7 +28,7 @@
   background-position-y: 0%;
   background-size: auto auto;
   background-repeat: repeat-x;
-  background-size: 20px 84px; 
+  background-size: 20px 70px; 
   background-position: 0px 20px;
   background-color: transparent;
   animation: move 15s linear infinite;
@@ -45,7 +52,7 @@
   background-position-y: 0%;
   background-size: auto auto;
   background-repeat: repeat-x;
-  background-size: 20px 84px; 
+  background-size: 20px 70px; 
   background-position: 0px 20px;
   background-color: transparent;
   animation: move 15s linear infinite;
@@ -69,7 +76,7 @@
   background-position-y: 0%;
   background-size: auto auto;
   background-repeat: repeat-x;
-  background-size: 20px 84px; 
+  background-size: 20px 70px; 
   background-position: 0px 20px;
   background-color: transparent;
   animation: move 15s linear infinite;

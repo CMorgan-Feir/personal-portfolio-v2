@@ -1,0 +1,48 @@
+.container {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 6rem;
+  padding: 1rem;
+}
+
+.container-forward {
+  flex-direction: row;
+}
+
+.container-reverse {
+  flex-direction: row-reverse;
+  text-align: end;
+}
+
+.text-container {
+  flex: 2;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+}
+
+.image-container  {
+  flex: 3;
+}
+
+.image {
+  width: 100%;
+}
+
+.video-container {
+  flex: 3;
+  padding: 1.5rem;
+  background-image: url(https://morganfeir.s3.us-east-2.amazonaws.com/portfolio/articulate-bg.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.video-content {
+  width: 100%;
+}

@@ -1,0 +1,23 @@
+.section-header {
+  width: 100%;
+  margin-bottom: 3rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.section-title {
+  padding-right:  1rem;
+}
+
+.section-hr-container {
+  height: 0.75rem;
+  width: 100%;
+  overflow: hidden;
+}
+
+.section-hr {
+  background-color: black;
+  height: 0.75rem;
+  width: 100%;
+}

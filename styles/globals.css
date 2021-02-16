@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css?family=Lora&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,800&display=swap');
+
 html {
   box-sizing: border-box;
   font-size: 16px;
@@ -9,7 +12,9 @@ html {
 *:after {
   box-sizing: inherit;
 }
-body,
+body {
+  background-color: #F5EFE1;
+},
 h1,
 h2,
 h3,
@@ -30,6 +35,26 @@ h4,
 h5,
 h6 {
   font-weight: bold;
+}
+
+h1 {
+  font-family: 'Lora', serif;
+  font-size: calc(1.8vw + 20px);
+  letter-spacing: 2px;
+}
+
+h2 {
+  font-family: 'Lora', serif;
+  font-size: calc(1.0vw + 14px);
+  letter-spacing: 2px;
+}
+
+h3 {
+  font-family: 'Open Sans', sans-serif;
+}
+
+p {
+  font-family: 'Open Sans', sans-serif;
 }
 
 ol,
