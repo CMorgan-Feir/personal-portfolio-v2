@@ -57,6 +57,7 @@ export default function Home() {
         <SectionBreak title="ABOUT"/>
         <Fade bottom>
           <div className={LandingStyles["about-container"]}>
+            <div className={LandingStyles["about-empty"]} />
             <div className={LandingStyles["about-text"]}>
               <h2>
                 I used to write about art; now I write code.
@@ -65,9 +66,11 @@ export default function Home() {
                 Working as an online editor, I started learning basic HTML and CSS to update the website, but the immense satisfaction I got from figuring out solutions drove me to learn more. I was struck by how many parallels there are between writing code and writing more generally—after all, an errant semicolon is an errant semicolon whether it’s in a line of JavaScript or an essay about Impressionist painting.
               </p>
             </div>
+            <div className={LandingStyles["about-empty"]} />
             <div className={LandingStyles["about-image-container"]}>
-              <img className="about-image" src="https://morganfeir.s3.us-east-2.amazonaws.com/portfolio/portrait.png"></img>
+              <img className={LandingStyles["about-image"]} src="https://morganfeir.s3.us-east-2.amazonaws.com/portfolio/portrait.png" />
             </div>
+            <div className={LandingStyles["about-empty"]} />
           </div>
         </Fade>
       </Pane>

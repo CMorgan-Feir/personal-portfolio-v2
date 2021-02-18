@@ -107,16 +107,24 @@
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  align-items: flex-end;
+}
+
+.about-empty {
+  flex: 1;
 }
 
 .about-text {
-  flex: 2;
+  flex: 7;
   padding-right: 3rem;
-  padding-bottom: 2rem;
 }
 
 .about-image-container {
-  flex: 1;
-  /* max-width: 360px; */
+  flex: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-image {
+  width: 100%;
 }
