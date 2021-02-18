@@ -9,11 +9,12 @@
 
 .container-forward {
   flex-direction: row;
+  text-align: end;
 }
 
 .container-reverse {
   flex-direction: row-reverse;
-  text-align: end;
+  text-align: start;
 }
 
 .text-container {
@@ -22,6 +23,8 @@
   display: flex;
   flex-direction: column;
   margin-bottom: 2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .image-container  {

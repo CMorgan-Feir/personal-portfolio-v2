@@ -2,11 +2,11 @@ import React from 'react'
 import WorkContainerStyles from '../../styles/work-container.module.css'
 import Link from 'next/link'
 
-export const VideoContainer = ({ heading, technologies, reversed }) => {
+export const VideoContainer = ({ projectId, heading, technologies, reversed }) => {
   const containerClasses = `${WorkContainerStyles["container"]} ${reversed ? WorkContainerStyles["container-reverse"] : WorkContainerStyles["container-forward"]}`
   
   return (
-    <div className={containerClasses}>
+    <div className={containerClasses} id={projectId}>
       <div className={WorkContainerStyles["text-container"]}>
         <div>
           <h2>{heading}</h2>

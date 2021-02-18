@@ -11,13 +11,16 @@
 }
 
 .section-hr-container {
-  height: 0.75rem;
+  height: 2rem;
   width: 100%;
   overflow: hidden;
 }
 
 .section-hr {
-  background-color: black;
-  height: 0.75rem;
+  /* background-color: black; */
+  background-image: url('/border3.png');
+  height: 1.5rem;
   width: 100%;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
 }

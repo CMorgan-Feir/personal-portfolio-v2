@@ -8,6 +8,8 @@ import { Pane } from '../src/components/pane'
 import { WorkContainer } from '../src/components/work-container'
 import { VideoContainer } from '../src/components/video-container'
 import { SectionBreak } from '../src/components/section-break'
+import { projects } from '../src/projects'
+import { Footer } from '../src/components/footer'
 
 export default function Home() {
   return (
@@ -19,39 +21,57 @@ export default function Home() {
         <div className={LandingStyles["main-intro"]}>
             <div className={LandingStyles["intro-overview-container"]}>
                 <h1>Hello, I’m Caoimhe. I write code. I’ve made{" "}
-                  <a href="/tabula-rasa"><span className={LandingStyles["wavy-underline"]} id={LandingStyles["green-font"]} data-text="ecommerce sites">ecommerce sites</span></a>,{" "}
-                  <a href="/articulate-360"><span className={LandingStyles["wavy-underline"]} id={LandingStyles["yellow-font"]}>VR projects</span></a> and{" "}
-                  <a href="/music-mapper"><span className={LandingStyles["wavy-underline"]} id={LandingStyles["pink-font"]}>web apps</span></a>.
+                  <a href="#tabula-rasa"><span className={LandingStyles["wavy-underline"]} id={LandingStyles["green-font"]} data-text="ecommerce sites">ecommerce sites</span></a>,{" "}
+                  <a href="#articulate-360"><span className={LandingStyles["wavy-underline"]} id={LandingStyles["yellow-font"]}>VR projects</span></a> and{" "}
+                  <a href="#music-mapper"><span className={LandingStyles["wavy-underline"]} id={LandingStyles["pink-font"]}>web apps</span></a>.
                 </h1>
             </div>
         </div>
       </Pane>
       <Pane>
         <SectionBreak title="WORK"/>
-        <Fade bottom>
-          <WorkContainer 
-            heading="A chic approach to curated prints"
-            technologies="JavaScript, HTML, CSS, React, Redux, React-Redux, Git, Node.js, Express, Sequelize, Google OAuth"
-          />
-        </Fade>
-        <Fade bottom>
-          <VideoContainer 
-            heading="An otherworldly art experience"
-            technologies="JavaScript, HTML, React 360, Git and plenty of math"
-            reversed
-          />
-        </Fade>
-        <Fade bottom>
-          <WorkContainer 
-            heading="Music taste, made visual"
-            technologies="JavaScript, HTML, CSS, Spotify OAuth 2.0, Request, Spotify API, Musixmatch API, D3.js, React, Redux, Express, Express Sessions"
-          />
-        </Fade>
+        {projects.map(project => {
+          return project.mediaType === 'image' ? 
+            <Fade bottom key={project.heading}>
+              <WorkContainer 
+                projectId={project.projectId}
+                heading={project.heading}
+                technologies={project.technologies}
+                url={project.media}
+                reversed={project.reversed}
+              />
+            </Fade> :
+            <Fade bottom key={project.heading}>
+              <VideoContainer 
+                projectId={project.projectId}
+                heading={project.heading}
+                technologies={project.technologies}
+                url={project.media}
+                reversed={project.reversed}
+              />
+            </Fade>
+          
+        })}
       </Pane>
       <Pane>
         <SectionBreak title="ABOUT"/>
-        Some text about me.
+        <Fade bottom>
+          <div className={LandingStyles["about-container"]}>
+            <div className={LandingStyles["about-text"]}>
+              <h2>
+                I used to write about art; now I write code.
+              </h2>
+              <p>
+                Working as an online editor, I started learning basic HTML and CSS to update the website, but the immense satisfaction I got from figuring out solutions drove me to learn more. I was struck by how many parallels there are between writing code and writing more generally—after all, an errant semicolon is an errant semicolon whether it’s in a line of JavaScript or an essay about Impressionist painting.
+              </p>
+            </div>
+            <div className={LandingStyles["about-image-container"]}>
+              <img className="about-image" src="https://morganfeir.s3.us-east-2.amazonaws.com/portfolio/portrait.png"></img>
+            </div>
+          </div>
+        </Fade>
       </Pane>
+      <Footer />
     </>
   )
 }
