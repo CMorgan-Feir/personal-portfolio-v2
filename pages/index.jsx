@@ -13,7 +13,7 @@ export default function Home() {
   return (
     <>
       <div className={LandingStyles['nav-centre']}>
-        <img className={LandingStyles['logo-image']} src="https://morganfeir.s3.us-east-2.amazonaws.com/portfolio/logo.png" />
+        <img className={LandingStyles['logo-image']} src="https://morganfeir.s3.us-east-2.amazonaws.com/portfolio/logo.png" alt="logo" />
       </div>
       <Pane>
         <div className={LandingStyles['main-intro']}>
@@ -78,7 +78,7 @@ export default function Home() {
             </div>
             <div className={LandingStyles['about-empty']} />
             <div className={LandingStyles['about-image-container']}>
-              <img className={LandingStyles['about-image']} src="https://morganfeir.s3.us-east-2.amazonaws.com/portfolio/portrait.png" />
+              <img className={LandingStyles['about-image']} src="https://morganfeir.s3.us-east-2.amazonaws.com/portfolio/portrait.png" alt="portrait" />
             </div>
             <div className={LandingStyles['about-empty']} />
           </div>
