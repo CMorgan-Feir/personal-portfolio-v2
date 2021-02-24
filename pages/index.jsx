@@ -16,6 +16,7 @@ export default function Home() {
     <>
       <Head>
         <title>CMF</title>
+        <link rel="shortcut icon" href="/favicon.ico" />
       </Head>
       <div className={LandingStyles['nav-centre']}>
         <img className={LandingStyles['logo-image']} src="https://morganfeir.s3.us-east-2.amazonaws.com/portfolio/logo.png" alt="logo" />
