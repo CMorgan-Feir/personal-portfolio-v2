@@ -6,7 +6,7 @@ import { Pane } from '../src/components/pane';
 import { WorkContainer } from '../src/components/work-container';
 import { VideoContainer } from '../src/components/video-container';
 import { SectionBreak } from '../src/components/section-break';
-import { projects } from '../src/projects';
+import projects from '../src/projects';
 import { Footer } from '../src/components/footer';
 
 export default function Home() {

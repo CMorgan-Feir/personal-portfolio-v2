@@ -1,4 +1,4 @@
-export const projects = [
+const projects = [
   {
     title: 'Tabula Rasa',
     projectId: 'tabula-rasa',
@@ -27,3 +27,5 @@ export const projects = [
     reversed: false,
   },
 ];
+
+export default projects;
