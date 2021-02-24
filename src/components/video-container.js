@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import WorkContainerStyles from '../../styles/work-container.module.css'
 
 export const VideoContainer = ({ projectId, heading, technologies, reversed }) => {
@@ -19,6 +20,13 @@ export const VideoContainer = ({ projectId, heading, technologies, reversed }) =
       </div>
     </div>
   )
+}
+
+VideoContainer.propTypes = {
+  projectId: PropTypes.string.isRequired,
+  heading: PropTypes.string.isRequired,
+  technologies: PropTypes.string.isRequired,
+  reversed: PropTypes.bool
 }
 
 VideoContainer.defaultProps = {

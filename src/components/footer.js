@@ -12,10 +12,10 @@ export const Footer = () => (
       <a href="mailto:morganfeir@gmail.com">
         <FontAwesomeIcon icon={faEnvelope} />
       </a>
-      <a href="https://github.com/CMorgan-Feir" target="_blank">
+      <a href="https://github.com/CMorgan-Feir" target="_blank" rel="noreferrer">
         <FontAwesomeIcon icon={faGithub} />
       </a>
-      <a href="https://www.linkedin.com/in/morgan-feir/" target="_blank">
+      <a href="https://www.linkedin.com/in/morgan-feir/" target="_blank" rel="noreferrer">
         <FontAwesomeIcon icon={faLinkedin} />
       </a>
     </div>

@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import WorkContainerStyles from '../../styles/work-container.module.css'
 
 export const WorkContainer = ({ projectId, heading, technologies, url, reversed }) => {
@@ -17,6 +18,14 @@ export const WorkContainer = ({ projectId, heading, technologies, url, reversed 
       </div>
     </div>
   )
+}
+
+WorkContainer.propTypes = {
+  projectId: PropTypes.string.isRequired,
+  heading: PropTypes.string.isRequired,
+  technologies: PropTypes.string.isRequired,
+  url: PropTypes.string.isRequired,
+  reversed: PropTypes.bool
 }
 
 WorkContainer.defaultProps = {

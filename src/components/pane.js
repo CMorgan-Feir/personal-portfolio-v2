@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import PaneStyles from '../../styles/pane.module.css'
 
 export const Pane = ({children}) => (
@@ -6,3 +7,7 @@ export const Pane = ({children}) => (
     {children}
   </div>
 )
+
+Pane.propTypes = {
+  children: PropTypes.element.isRequired
+}

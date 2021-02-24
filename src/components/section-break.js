@@ -1,5 +1,6 @@
 import React from 'react'
-import Fade from 'react-reveal/Fade';
+import PropTypes from 'prop-types'
+import Fade from 'react-reveal/Fade'
 
 import SectionBreakStyles from '../../styles/section-break.module.css'
 
@@ -13,3 +14,7 @@ export const SectionBreak = ({ title }) => (
     </div>
   </div>
 )
+
+SectionBreak.propTypes = {
+  title: PropTypes.string.isRequired
+}
