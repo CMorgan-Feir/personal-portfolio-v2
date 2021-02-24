@@ -11,7 +11,4 @@
   overflow: visible;
   margin-top: 0;
   width: 170px;
-  /* @include breakpoint-max-sm {
-    width: 130px;
-  } */
 }
