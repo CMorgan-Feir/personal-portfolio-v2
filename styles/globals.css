@@ -40,7 +40,8 @@ h6 {
 
 h1 {
   font-family: 'Lora', serif;
-  font-size: calc(1.8vw + 20px);
+  /* font-size: calc(1.8vw + 20px); */
+  font-size: 3rem;
   letter-spacing: 2px;
 }
 
@@ -71,4 +72,16 @@ img {
 a {
   color: inherit;
   text-decoration: none;
+}
+
+@media screen and (max-width: 900px) {
+  h1 {
+    font-size: 2.25rem;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  h1 {
+    font-size: 1.875rem;
+  }
 }

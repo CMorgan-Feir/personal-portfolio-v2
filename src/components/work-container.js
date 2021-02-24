@@ -1,6 +1,5 @@
-import React, { useState } from 'react'
+import React from 'react'
 import WorkContainerStyles from '../../styles/work-container.module.css'
-import Link from 'next/link'
 
 export const WorkContainer = ({ projectId, heading, technologies, url, reversed }) => {
   const containerClasses = `${WorkContainerStyles["container"]} ${reversed ? WorkContainerStyles["container-reverse"] : WorkContainerStyles["container-forward"]}`

@@ -144,4 +144,12 @@
   .about-text {
     padding-right: 0;
   }
+
+  .intro-overview-container {
+    width: 90%;
+  }
+
+  .intro-overview-second-line {
+    display: none;
+  }
 }
