@@ -2,6 +2,7 @@ import React from 'react';
 import Fade from 'react-reveal/Fade';
 
 import LandingStyles from '../styles/landing.module.css';
+import { About } from '../src/components/about';
 import { Pane } from '../src/components/pane';
 import { WorkContainer } from '../src/components/work-container';
 import { VideoContainer } from '../src/components/video-container';
@@ -19,7 +20,7 @@ export default function Home() {
         <div className={LandingStyles['main-intro']}>
           <div className={LandingStyles['intro-overview-container']}>
             <h1>
-              Hello, I’m Caoimhe. I write code.
+              Hello, I’m Caoimhe. I write code.{' '}
               <span className={LandingStyles['intro-overview-second-line']}>
                 I’ve made
                 {' '}
@@ -63,27 +64,7 @@ export default function Home() {
             </Fade>
           )))}
       </Pane>
-      <Pane>
-        <SectionBreak title="ABOUT" />
-        <Fade bottom>
-          <div className={LandingStyles['about-container']}>
-            <div className={LandingStyles['about-empty']} />
-            <div className={LandingStyles['about-text']}>
-              <h2>
-                I used to write about art; now I write code.
-              </h2>
-              <p>
-                Working as an online editor, I started learning basic HTML and CSS to update the website, but the immense satisfaction I got from figuring out solutions drove me to learn more. I was struck by how many parallels there are between writing code and writing more generally—after all, an errant semicolon is an errant semicolon whether it’s in a line of JavaScript or an essay about Impressionist painting.
-              </p>
-            </div>
-            <div className={LandingStyles['about-empty']} />
-            <div className={LandingStyles['about-image-container']}>
-              <img className={LandingStyles['about-image']} src="https://morganfeir.s3.us-east-2.amazonaws.com/portfolio/portrait.png" alt="portrait" />
-            </div>
-            <div className={LandingStyles['about-empty']} />
-          </div>
-        </Fade>
-      </Pane>
+      <About />
       <Footer />
     </>
   );
