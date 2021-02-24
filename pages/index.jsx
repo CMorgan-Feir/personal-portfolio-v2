@@ -1,4 +1,5 @@
 import React from 'react';
+import Head from 'next/head';
 import Fade from 'react-reveal/Fade';
 
 import LandingStyles from '../styles/landing.module.css';
@@ -13,6 +14,9 @@ import { Footer } from '../src/components/footer';
 export default function Home() {
   return (
     <>
+      <Head>
+        <title>CMF</title>
+      </Head>
       <div className={LandingStyles['nav-centre']}>
         <img className={LandingStyles['logo-image']} src="https://morganfeir.s3.us-east-2.amazonaws.com/portfolio/logo.png" alt="logo" />
       </div>
